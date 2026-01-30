@@ -90,7 +90,7 @@ def averaged_psi_pattern(signal, fs, window_sec, overlap_sec):
     return avg_psi, time_lags
 
 
-def psi_params(psi, time_lags, decay_threshold = 0.15):
+def psi_params(psi, time_lags, decay_threshold = 0.15, verbose = False):
     
     idx_max = np.argmax(psi)
     max_val = psi[idx_max]
@@ -108,12 +108,20 @@ def psi_params(psi, time_lags, decay_threshold = 0.15):
     t_decay_end = time_lags[idx_decay_end]
     decay_time = t_decay_end - t_max
     
-    return t_max, rise_time, decay_time, max_val
+    total_duration = rise_time + decay_time
+    
+    if verbose == True:
+        print(f'Rise Time: {rise_time * 1000} ms')
+        print(f'Decay Time: {decay_time * 1000} ms')
+        print(f'Total Duration: {total_duration * 1000} ms')
+    
+    
+    return total_duration, rise_time, decay_time, max_val
 
 
 def specparam(psd, freqs, freq_range = [40, 85], aperiodic_mode = 'fixed', verbose = False):
     
-    fm = SpectralModel(peak_width_limits=[1, 8], max_n_peaks=6, min_peak_height=0.15, aperiodic_mode = aperiodic_mode)
+    fm = SpectralModel(peak_width_limits = [1, 8], max_n_peaks = 0, min_peak_height = 0.15, aperiodic_mode = aperiodic_mode)
     fm.add_data(freqs, psd, freq_range)
     fm.fit()
     
