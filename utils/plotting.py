@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def plot_trace(trace, time, size=(5, 2), xlim=(0, 0.05), title='Signal', trace_color='tab:blue', linewidth=2):
+def plot_trace(trace, time, size = (5, 2), xlim = (0, 0.05), title = 'Signal', trace_color = 'tab:blue', linewidth = 2):
     
-    plt.figure(figsize=size)
-    plt.plot(time, trace, color=trace_color, linewidth=linewidth, label='Signal')
+    plt.figure(figsize = size)
+    plt.plot(time, trace, color = trace_color, linewidth = linewidth)
     
     t_arr = np.asarray(time)
     y_arr = np.asarray(trace)
@@ -23,12 +23,11 @@ def plot_trace(trace, time, size=(5, 2), xlim=(0, 0.05), title='Signal', trace_c
         plt.ylim(y_min - margin, y_max + margin)
     
     plt.title(title)
-    plt.xlabel("Time")
-    plt.ylabel("Amplitude")
+    plt.xlabel("Time (s)")
+    plt.ylabel("Amplitude (AU)")
     plt.xlim(xlim)
-    plt.grid(True, which='both', linestyle='--', alpha=0.7)
-    plt.axhline(0, color='black', linewidth=0.8) 
-    plt.legend()
+    plt.grid(True, which = 'both', linestyle = '--', alpha = 0.7)
+    plt.axhline(0, color = 'black', linewidth = 0.2) 
     plt.show()
 
     
