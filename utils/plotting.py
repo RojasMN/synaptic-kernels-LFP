@@ -31,22 +31,15 @@ def plot_trace(trace, time, size = (5, 2), xlim = (0, 0.05), title = 'Signal', t
     plt.show()
 
     
-def plot_psd_log(psd, freqs, size = (5, 4), xlim = None, title = 'PSD', color = 'black', linewidth = 1.5):
+def plot_psd_log(psd, freqs, size = (5, 4), xlim = None, ylim  = None, title = 'PSD', color = 'black', linewidth = 1.5):
     
     plt.figure(figsize = size)
     plt.loglog(freqs, psd, color = color, linewidth = linewidth)
     
     if xlim is not None:
         plt.xlim(xlim)
-        f_arr = np.asarray(freqs)
-        p_arr = np.asarray(psd)
-        mask = (f_arr >= xlim[0]) & (f_arr <= xlim[1]) & (f_arr > 0)
-
-        if np.any(mask):
-            visible_power = p_arr[mask]
-            p_min = visible_power.min()
-            p_max = visible_power.max()
-            plt.ylim(p_min * 0.8, p_max * 1.5)
+    if ylim is not None:
+        plt.ylim(ylim)
     
     plt.title(title)
     plt.xlabel("Frequency (Hz)")
