@@ -37,7 +37,7 @@ The core logic is modularized in the following files:
 ### 3. Large-Scale Simulation 
 * **`synaptic_balance.py`**:
     * Contains the main pipeline for large-scale Monte Carlo simulations.
-    * `eib_sim_parallel`: Runs parallelized simulations of varying E/I ratios, computing both PSI and Spectral features for each iteration.
+    * `eib_sim_parallel`: Runs parallelized simulations of varying E/I ratios, computing both $\Psi$ and Spectral features for each iteration.
   
 ## Installation and Dependencies
 To run the simulations, you will need the following Python packages:
