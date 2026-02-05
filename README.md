@@ -68,6 +68,14 @@ Additionally, the FPP model has been extensively used to simulate neural signals
 * Halgren, M., Kang, R., Voytek, B., Ulbert, I., Fabo, D., Eross, L., ... & Halgren, E. (2021). The timescale and magnitude of aperiodic activity decreases with cortical depth in humans, macaques and mice. *bioRxiv*. [DOI: 10.1101/2021.07.28.454235](https://doi.org/10.1101/2021.07.28.454235)
 * Miller, K. J., Sorensen, L. B., Ojemann, J. G., & den Nijs, M. (2009). Power-law scaling in the brain surface electric potential. *PLOS Computational Biology*, *5*(12), e1000609. [DOI: 10.1371/journal.pcbi.1000609](https://doi.org/10.1371/journal.pcbi.1000609)
 
+## Citation
+
+If you use this code, the $\Psi$ pattern implementation, or the theoretical framework provided in this repository for your projects, please cite this repository directly:
+
+**Text Format:**
+> [Rojas, M.]. (2026). *Synaptic LFP: Excitation-Inhibition Balance & Signal Analysis* [Computer software]. GitHub. https://github.com/[RojasMN]/[synaptic-kernels-LFP]
+
+
 
 
 
