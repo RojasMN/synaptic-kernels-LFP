@@ -73,8 +73,18 @@ Additionally, the FPP model has been extensively used to simulate neural signals
 If you use this code, the $\Psi$ pattern implementation, or the theoretical framework provided in this repository for your projects, please cite this repository directly:
 
 **Text Format:**
-> [Rojas, M.]. (2026). *Synaptic LFP: Excitation-Inhibition Balance & Signal Analysis* [Computer software]. GitHub. https://github.com/[RojasMN]/[synaptic-kernels-LFP]
+> Rojas, M. (2026). *Synaptic LFP/ECoG/EEG: Excitation-Inhibition Balance & Signal Analysis* [Computer software]. GitHub. https://github.com/RojasMN/synaptic-kernels-LFP
 
+**BibTeX:**
+```bibtex
+@software{rojas_synaptic_lfp_2026,
+  author = {Rojas, M.},
+  title = {Synaptic LFP/ECoG/EEG: Excitation-Inhibition Balance & Signal Analysis},
+  url = {[https://github.com/RojasMN/synaptic-kernels-LFP](https://github.com/RojasMN/synaptic-kernels-LFP)},
+  version = {1.0.0},
+  year = {2026}
+}
+```
 
 
 
