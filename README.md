@@ -1,11 +1,11 @@
-# Synaptic LFP: Excitation-Inhibition Balance and Signal Analysis
+# Synaptic LFP/ECoG/EEG: Excitation-Inhibition Balance and Signal Analysis
 
 ## Overview
 
-This repository contains a Python framework for simulating Local Field Potentials (LFPs) using the **Filtered Poisson Process (FPP)** formalism. The project explores how the physiological balance between synaptic excitation and inhibition (**E/I Balance or EIB**) shapes the LFP signal in both the time and frequency domains.
+This repository contains a Python framework for simulating electrophysiological signals (LFPs, ECoGs, EEGs) using the **Filtered Poisson Process (FPP)** formalism. The project explores how the physiological balance between synaptic excitation and inhibition **(E/I Balance or EIB)** shapes the LFP signal in both the time and frequency domains.
 
 The codebase provides tools to generate synthetic LFP signals, simulate varying E/I ratios, and analyze the resulting data using two complementary approaches:
-1.  **Spectral Parameterization (Frequency Domain):** Analyzing the aperiodic $1/f$ slope of the Power Spectral Density (PSD).
+1.  **Spectral Parameterization (Frequency Domain):** Analyzing the aperiodic slope of the Power Spectral Density (PSD).
 2.  **$\Psi$ Pattern (Time Domain):** A novel metric based on the derivative of the signal's autocorrelation, designed to capture effective synaptic time constants.
 
 ## Background
@@ -37,7 +37,7 @@ The core logic is modularized in the following files:
 ### 3. Large-Scale Simulation 
 * **`synaptic_balance.py`**:
     * Contains the main pipeline for large-scale Monte Carlo simulations.
-    * `eib_sim_parallel`: Runs parallelized simulations of varying E/I ratios, computing both PSI and Spectral features for each iteration.
+    * `eib_sim_parallel`: Runs parallelized simulations of varying E/I ratios, computing both $\Psi$ and Spectral features for each iteration.
   
 ## Installation and Dependencies
 To run the simulations, you will need the following Python packages:
@@ -46,8 +46,6 @@ To run the simulations, you will need the following Python packages:
 pip install numpy pandas matplotlib scipy tqdm nitime specparam
 
 ```
-
----
 
 ## References
 
@@ -69,6 +67,24 @@ Additionally, the FPP model has been extensively used to simulate neural signals
 * Gao, R., Peterson, E. J., & Voytek, B. (2017). Inferring synaptic excitation/inhibition balance from field potentials. *NeuroImage*, *158*, 70–78. [DOI: 10.1016/j.neuroimage.2017.06.078](https://doi.org/10.1016/j.neuroimage.2017.06.078)
 * Halgren, M., Kang, R., Voytek, B., Ulbert, I., Fabo, D., Eross, L., ... & Halgren, E. (2021). The timescale and magnitude of aperiodic activity decreases with cortical depth in humans, macaques and mice. *bioRxiv*. [DOI: 10.1101/2021.07.28.454235](https://doi.org/10.1101/2021.07.28.454235)
 * Miller, K. J., Sorensen, L. B., Ojemann, J. G., & den Nijs, M. (2009). Power-law scaling in the brain surface electric potential. *PLOS Computational Biology*, *5*(12), e1000609. [DOI: 10.1371/journal.pcbi.1000609](https://doi.org/10.1371/journal.pcbi.1000609)
+
+## Citation
+
+If you use this code, the $\Psi$ pattern implementation, or the theoretical framework provided in this repository for your projects, please cite this repository directly:
+
+**Text Format:**
+> Rojas, M. (2026). *Synaptic LFP/ECoG/EEG: Excitation-Inhibition Balance & Signal Analysis* [Computer software]. GitHub. https://github.com/RojasMN/synaptic-kernels-LFP
+
+**BibTeX:**
+```bibtex
+@software{rojas_synaptic_lfp_2026,
+  author = {Rojas, M.},
+  title = {Synaptic LFP/ECoG/EEG: Excitation-Inhibition Balance & Signal Analysis},
+  url = {[https://github.com/RojasMN/synaptic-kernels-LFP](https://github.com/RojasMN/synaptic-kernels-LFP)},
+  version = {1.0.0},
+  year = {2026}
+}
+```
 
 
 
