@@ -49,7 +49,7 @@ pip install numpy pandas matplotlib scipy tqdm nitime specparam
 
 ## References
 
-For further reading, please consult the following literature. The **$\Psi$ pattern** and its application as a signal analysis tool for recovering transients are detailed in **Díaz et al. (2023)**. 
+For further reading, please consult the following literature. The **$\Psi$ pattern** and its applications as a signal analysis tool for recovering transients are detailed in **Díaz et al. (2023)**. 
 
 * Díaz, J., Ando, H., Han, G., Malyshevskaya, O., Hayashi, X., Letelier, J.-C., Yanagisawa, M., & Vogt, K. E. (2023). Recovering Arrhythmic EEG Transients from Their Stochastic Interference. *arXiv*. [DOI: 10.48550/arXiv.2303.07683](https://doi.org/10.48550/arXiv.2303.07683)
 
