@@ -12,8 +12,6 @@ The codebase provides tools to generate synthetic LFP signals, simulate varying 
 
 The simulations and analysis in this repository are grounded in the following theoretical concepts, detailed briefly in the `background.pdf` file.
 
----
-
 ## Repository Structure
 
 ### 1. Simulation Notebooks
