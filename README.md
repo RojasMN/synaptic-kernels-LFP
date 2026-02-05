@@ -19,8 +19,8 @@ $$LFP(t) = (S * K)(t) = \sum_{j} K(t - t_j)$$
 
 Where $S$ is the spike train and $K$ is the synaptic kernel (e.g., a dual-exponential function representing AMPA or GABA currents).
 
-### 2. The PSI Pattern ($\Psi$)
-To analyze the signal in the time domain, we introduce the **PSI Pattern**, defined as the negative derivative of the autocorrelation function ($R_{xx}$) of the signal:
+### 2. The $\Psi$ Pattern 
+To analyze the signal in the time domain, the $\Psi$ pattern is introduced, defined as the negative derivative of the autocorrelation function ($R_{xx}$) of the signal:
 
 $$\Psi(\tau) = - \frac{d}{d\tau} R_{xx}(\tau)$$
 
