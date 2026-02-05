@@ -17,7 +17,7 @@ The simulations and analysis in this repository are grounded in theoretical conc
 ### 1. Simulation Notebooks
 The `notebooks/` directory contains step-by-step tutorials and theoretical validations:
 
-* **`01_fpps.ipynb`**: Introduction to the mathematics of Filtered Point Processes and kernel generation (Alpha, Square, Dual-Exponential).
+* **`01_fpps.ipynb`**: Introduction to the mathematics of Filtered Poisson Processes and kernel generation (Alpha, Square, Dual-Exponential).
 * **`02_psi_pattern.ipynb`**: Derivation and implementation of the $\Psi$ pattern. Demonstrates how the $\Psi$ pattern mirrors the synaptic kernel.
 * **`03_specparam.ipynb`**: Implementation of spectral parameterization to extract aperiodic exponents from simulated LFPs.
 * **`04_synaptic_balance.ipynb`**: The main experiment. Simulates mixed Excitatory/Inhibitory signals and correlates the E/I ratio with the metrics defined in previous notebooks.
