@@ -22,7 +22,7 @@ The `notebooks/` directory contains step-by-step tutorials and theoretical valid
 * **`03_specparam.ipynb`**: Implementation of spectral parameterization to extract aperiodic exponents from simulated LFPs.
 * **`04_synaptic_balance.ipynb`**: The main experiment. Simulates mixed Excitatory/Inhibitory signals and correlates the E/I ratio with the metrics defined in previous notebooks.
 
-### 2. Python Package
+### 2. Python Files
 The core logic is modularized in the following files:
 
 * **`fpp_simulation.py`**:
@@ -40,11 +40,33 @@ The core logic is modularized in the following files:
     * `eib_sim_parallel`: Runs parallelized simulations of varying E/I ratios, computing both PSI and Spectral features for each iteration.
 ---
 
-## Installation & Dependencies
-
+## Installation and Dependencies
 To run the simulations, you will need the following Python packages:
 
 ```bash
 pip install numpy pandas matplotlib scipy tqdm nitime specparam
 
 ```
+---
+
+## References 
+
+1. Díaz, J., Ando, H., Han, G., Malyshevskaya, O., Hayashi, X., Letelier, J.-C., Yanagisawa, M., & Vogt, K. E. (2023). Recovering Arrhythmic EEG Transients from Their Stochastic Interference. arXiv. https://doi.org/10.48550/arXiv.2303.07683
+2. Donoghue, T., Haller, M., Peterson, E. J., Varma, P., Sebastian, P., Gao, R., Noto, T., Lara, A. H., Wallis, J. D., Knight, R. T., Shestyuk, A., & Voytek, B. (2020). Parameterizing neural power spectra into periodic and aperiodic components. Nature Neuroscience, 23(12), 1655–1665. https://doi.org/10.1038/s41593-020-00744-x
+3. Gao, R., Peterson, E. J., & Voytek, B. (2017). Inferring synaptic excitation/inhibition balance from field potentials. NeuroImage, 158, 70–78. https://doi.org/10.1016/j.neuroimage.2017.06.078
+4. He, B. J. (2014). Scale-free brain activity: past, present, and future. Trends in Cognitive Sciences, 18(9), 480–487. https://doi.org/10.1016/j.tics.2014.04.003
+5. Halgren, M., Kang, R., Voytek, B., Ulbert, I., Fabo, D., Eross, L., ... & Halgren, E. (2021). The timescale and magnitude of aperiodic activity decreases with cortical depth in humans, macaques and mice. bioRxiv. https://doi.org/10.1101/2021.07.28.454235
+6. Miller, K. J., Sorensen, L. B., Ojemann, J. G., & den Nijs, M. (2009). Power-law scaling in the brain surface electric potential. PLOS Computational Biology, 5(12), e1000609. https://doi.org/10.1371/journal.pcbi.1000609
+
+
+
+
+
+
+
+
+
+---
+## References and Bibliography
+
+
