@@ -150,7 +150,7 @@ if __name__ == '__main__':
     
     SIM_COUNT = 10000
     
-    OUTPUT_FOLDER = r'C:\Users\marce\Escritorio\Proyectos\synaptic_lfp\simulation_results'
+    OUTPUT_FOLDER = r'C:\Users\marce\Escritorio\Proyectos\synaptic_lfp\simulation_data'
     FILENAME = 'eib_simulation_results.csv'
     
     os.makedirs(OUTPUT_FOLDER, exist_ok = True)
