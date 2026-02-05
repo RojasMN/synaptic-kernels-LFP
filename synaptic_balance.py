@@ -65,6 +65,8 @@ def run_single_sim(args):
                              aperiodic_mode = 'fixed')
         
     offset_linear, exp_linear = model_linear.results.params.aperiodic.params
+    mae_linear = model_linear.results.metrics.results['error_mae']
+    r2_linear = model_linear.results.metrics.results['gof_rsquared']
         
         
     # Spectral parameterization: double exponent fit between 1 and 300 Hz a
@@ -74,22 +76,31 @@ def run_single_sim(args):
                            aperiodic_mode = 'doublexp')
         
     offset_dexp, exp_0, knee, exp_1 = model_dexp.results.params.aperiodic.params    
+    mae_dexp = model_dexp.results.metrics.results['error_mae']
+    r2_dexp = model_dexp.results.metrics.results['gof_rsquared']
     
     return {
         'sim_id': sim_id,
         'n_ex': n_ex,
         'n_in': n_in,
         'eib': eib,
+        
         'psi_duration': psi_duration,
         'psi_rise': psi_rise,
         'psi_decay': psi_decay,
         'psi_maxval': psi_maxval,
+        
         'offset_linear': offset_linear,
         'exp_linear': exp_linear,
+        'mae_linear': mae_linear,
+        'r2_linear': r2_linear,
+        
         'offset_dexp': offset_dexp,
         'exp_0': exp_0,
         'knee': knee,
-        'exp_1': exp_1
+        'exp_1': exp_1,
+        'mae_dexp': mae_dexp,
+        'r2_dexp': r2_dexp
     }
 
 
@@ -137,7 +148,7 @@ def eib_sim_parallel(num_sims, fs = 10000, t_sec = 150, n_jobs = -1):
 # Run the simulation
 if __name__ == '__main__':
     
-    SIM_COUNT = 5000
+    SIM_COUNT = 10000
     
     OUTPUT_FOLDER = r'C:\Users\marce\Escritorio\Proyectos\synaptic_lfp\simulation_results'
     FILENAME = 'eib_simulation_results.csv'
