@@ -47,8 +47,6 @@ pip install numpy pandas matplotlib scipy tqdm nitime specparam
 
 ```
 
----
-
 ## References
 
 For further reading, please consult the following literature. The **$\Psi$ pattern** and its application as a signal analysis tool for recovering transients are detailed in **Díaz et al. (2023)**. 
