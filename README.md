@@ -53,22 +53,22 @@ pip install numpy pandas matplotlib scipy tqdm nitime specparam
 
 For further reading, please consult the following literature. The **$\Psi$ pattern** and its application as a signal analysis tool for recovering transients are detailed in **Díaz et al. (2023)**. 
 
-1. Díaz, J., Ando, H., Han, G., Malyshevskaya, O., Hayashi, X., Letelier, J.-C., Yanagisawa, M., & Vogt, K. E. (2023). Recovering Arrhythmic EEG Transients from Their Stochastic Interference. *arXiv*. [DOI: 10.48550/arXiv.2303.07683](https://doi.org/10.48550/arXiv.2303.07683)
+* Díaz, J., Ando, H., Han, G., Malyshevskaya, O., Hayashi, X., Letelier, J.-C., Yanagisawa, M., & Vogt, K. E. (2023). Recovering Arrhythmic EEG Transients from Their Stochastic Interference. *arXiv*. [DOI: 10.48550/arXiv.2303.07683](https://doi.org/10.48550/arXiv.2303.07683)
 
 The methodology for the **parameterization of power spectra** (separating periodic and aperiodic components) is established in **Donoghue et al. (2020)**. 
 
-2. Donoghue, T., Haller, M., Peterson, E. J., Varma, P., Sebastian, P., Gao, R., Noto, T., Lara, A. H., Wallis, J. D., Knight, R. T., Shestyuk, A., & Voytek, B. (2020). Parameterizing neural power spectra into periodic and aperiodic components. *Nature Neuroscience*, *23*(12), 1655–1665. [DOI: 10.1038/s41593-020-00744-x](https://doi.org/10.1038/s41593-020-00744-x)
+* Donoghue, T., Haller, M., Peterson, E. J., Varma, P., Sebastian, P., Gao, R., Noto, T., Lara, A. H., Wallis, J. D., Knight, R. T., Shestyuk, A., & Voytek, B. (2020). Parameterizing neural power spectra into periodic and aperiodic components. *Nature Neuroscience*, *23*(12), 1655–1665. [DOI: 10.1038/s41593-020-00744-x](https://doi.org/10.1038/s41593-020-00744-x)
 
 For physiological background on the **spectral exponent** and scale-free brain activity, refer to **He (2014)**. 
 
-3. He, B. J. (2014). Scale-free brain activity: past, present, and future. *Trends in Cognitive Sciences*, *18*(9), 480–487. [DOI: 10.1016/j.tics.2014.04.003](https://doi.org/10.1016/j.tics.2014.04.003)
+* He, B. J. (2014). Scale-free brain activity: past, present, and future. *Trends in Cognitive Sciences*, *18*(9), 480–487. [DOI: 10.1016/j.tics.2014.04.003](https://doi.org/10.1016/j.tics.2014.04.003)
 
 
 Additionally, the FPP model has been extensively used to simulate neural signals such as EEGs and LFPs in works by **Gao et al. (2017)**, **Halgren et al. (2021)**, and **Miller et al. (2009)**.
 
-4. Gao, R., Peterson, E. J., & Voytek, B. (2017). Inferring synaptic excitation/inhibition balance from field potentials. *NeuroImage*, *158*, 70–78. [DOI: 10.1016/j.neuroimage.2017.06.078](https://doi.org/10.1016/j.neuroimage.2017.06.078)
-5. Halgren, M., Kang, R., Voytek, B., Ulbert, I., Fabo, D., Eross, L., ... & Halgren, E. (2021). The timescale and magnitude of aperiodic activity decreases with cortical depth in humans, macaques and mice. *bioRxiv*. [DOI: 10.1101/2021.07.28.454235](https://doi.org/10.1101/2021.07.28.454235)
-6. Miller, K. J., Sorensen, L. B., Ojemann, J. G., & den Nijs, M. (2009). Power-law scaling in the brain surface electric potential. *PLOS Computational Biology*, *5*(12), e1000609. [DOI: 10.1371/journal.pcbi.1000609](https://doi.org/10.1371/journal.pcbi.1000609)
+* Gao, R., Peterson, E. J., & Voytek, B. (2017). Inferring synaptic excitation/inhibition balance from field potentials. *NeuroImage*, *158*, 70–78. [DOI: 10.1016/j.neuroimage.2017.06.078](https://doi.org/10.1016/j.neuroimage.2017.06.078)
+* Halgren, M., Kang, R., Voytek, B., Ulbert, I., Fabo, D., Eross, L., ... & Halgren, E. (2021). The timescale and magnitude of aperiodic activity decreases with cortical depth in humans, macaques and mice. *bioRxiv*. [DOI: 10.1101/2021.07.28.454235](https://doi.org/10.1101/2021.07.28.454235)
+* Miller, K. J., Sorensen, L. B., Ojemann, J. G., & den Nijs, M. (2009). Power-law scaling in the brain surface electric potential. *PLOS Computational Biology*, *5*(12), e1000609. [DOI: 10.1371/journal.pcbi.1000609](https://doi.org/10.1371/journal.pcbi.1000609)
 
 
 
