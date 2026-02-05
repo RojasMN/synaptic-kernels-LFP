@@ -1,8 +1,8 @@
-# Synaptic LFP: Excitation-Inhibition Balance and Signal Analysis
+# Synaptic LFP/ECoG/EEG: Excitation-Inhibition Balance and Signal Analysis
 
 ## Overview
 
-This repository contains a Python framework for simulating Local Field Potentials (LFPs) using the **Filtered Poisson Process (FPP)** formalism. The project explores how the physiological balance between synaptic excitation and inhibition **(E/I Balance or EIB)** shapes the LFP signal in both the time and frequency domains.
+This repository contains a Python framework for simulating electrophysiological signals (LFPs, ECoGs, EEGs) using the **Filtered Poisson Process (FPP)** formalism. The project explores how the physiological balance between synaptic excitation and inhibition **(E/I Balance or EIB)** shapes the LFP signal in both the time and frequency domains.
 
 The codebase provides tools to generate synthetic LFP signals, simulate varying E/I ratios, and analyze the resulting data using two complementary approaches:
 1.  **Spectral Parameterization (Frequency Domain):** Analyzing the aperiodic $1/f$ slope of the Power Spectral Density (PSD).
