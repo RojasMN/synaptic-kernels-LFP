@@ -5,7 +5,7 @@
 This repository contains a Python framework for simulating electrophysiological signals (LFPs, ECoGs, EEGs) using the **Filtered Poisson Process (FPP)** formalism. The project explores how the physiological balance between synaptic excitation and inhibition **(E/I Balance or EIB)** shapes the LFP signal in both the time and frequency domains.
 
 The codebase provides tools to generate synthetic LFP signals, simulate varying E/I ratios, and analyze the resulting data using two complementary approaches:
-1.  **Spectral Parameterization (Frequency Domain):** Analyzing the aperiodic $1/f$ slope of the Power Spectral Density (PSD).
+1.  **Spectral Parameterization (Frequency Domain):** Analyzing the aperiodic slope of the Power Spectral Density (PSD).
 2.  **$\Psi$ Pattern (Time Domain):** A novel metric based on the derivative of the signal's autocorrelation, designed to capture effective synaptic time constants.
 
 ## Background
