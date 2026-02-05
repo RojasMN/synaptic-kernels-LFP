@@ -6,11 +6,11 @@ This repository contains a Python framework for simulating Local Field Potential
 
 The codebase provides tools to generate synthetic LFP signals, simulate varying E/I ratios, and analyze the resulting data using two complementary approaches:
 1.  **Spectral Parameterization (Frequency Domain):** Analyzing the aperiodic $1/f$ slope of the Power Spectral Density (PSD).
-2.  **PSI Pattern (Time Domain):** A novel metric based on the derivative of the signal's autocorrelation, designed to capture effective synaptic time constants.
+2.  **$\Psi$ Pattern (Time Domain):** A novel metric based on the derivative of the signal's autocorrelation, designed to capture effective synaptic time constants.
 
 ## Background
 
-The simulations and analysis in this repository are grounded in the following theoretical concepts, detailed briefly in the `background.pdf` file.
+The simulations and analysis in this repository are grounded in theoretical concepts detailed briefly in the `background.pdf` file.
 
 ## Repository Structure
 
@@ -18,7 +18,7 @@ The simulations and analysis in this repository are grounded in the following th
 The `notebooks/` directory contains step-by-step tutorials and theoretical validations:
 
 * **`01_fpps.ipynb`**: Introduction to the mathematics of Filtered Point Processes and kernel generation (Alpha, Square, Dual-Exponential).
-* **`02_psi_pattern.ipynb`**: Derivation and implementation of the PSI Pattern. Demonstrates how $\Psi(\tau)$ mirrors the synaptic kernel.
+* **`02_psi_pattern.ipynb`**: Derivation and implementation of the $\Psi$ pattern. Demonstrates how the $\Psi$ pattern mirrors the synaptic kernel.
 * **`03_specparam.ipynb`**: Implementation of spectral parameterization to extract aperiodic exponents from simulated LFPs.
 * **`04_synaptic_balance.ipynb`**: The main experiment. Simulates mixed Excitatory/Inhibitory signals and correlates the E/I ratio with the metrics defined in previous notebooks.
 
